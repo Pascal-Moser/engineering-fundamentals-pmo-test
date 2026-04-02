@@ -136,11 +136,11 @@ Replace the deployment github action in PART C with ArgoCD.
 ### Manage Dependencies
 Dependency management is a crucial part of software development. It helps you to keep your dependencies up to date and secure. 
 
-There are multiple tools and technologies to manage dependencies. Check wich tool or technology fits best for your project and your needs. Take into account that this soulution should be used in enterprise environments with multiple developers and multiple projects.
+There are multiple tools and technologies to manage dependencies. Check which tool or technology fits best for your project and your needs. Take into account that this solution should be used in enterprise environments with multiple developers and multiple projects.
 
 Add a workflow to your project to automatically update dependencies.
 
-Be carefull with permissions and tokens ;)
+Be careful with permissions and tokens ;)
 
 ## PART H - AI Code Review
 
