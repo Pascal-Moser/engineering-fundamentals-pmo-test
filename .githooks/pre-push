@@ -15,7 +15,7 @@ if [ -z "$AI_REVIEW_API_KEY" ]; then
 fi
 
 API_URL="${AI_REVIEW_API_URL:-https://api.openai.com/v1/chat/completions}"
-MODEL="${AI_REVIEW_MODEL:-gpt-4o-mini}"
+MODEL="${AI_REVIEW_MODEL:-gpt-5-nano}"
 
 # Get the commits about to be pushed
 # pre-push hook reads from stdin: <local ref> <local sha1> <remote ref> <remote sha1>
