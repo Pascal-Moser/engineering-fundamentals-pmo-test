@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:18-alpine AS build
+FROM node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e AS build
 
 # Set working directory
 WORKDIR /app
@@ -22,7 +22,7 @@ COPY vite.config.ts ./vite.config.ts
 RUN npm run build
 
 # Use a lightweight web server for static files
-FROM node:18-alpine AS serve
+FROM node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e AS serve
 
 # Create a non-root user and group for the serve stage
 RUN npm install --ignore-scripts -g serve \
